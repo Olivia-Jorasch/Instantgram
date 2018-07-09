@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		030117DA20F412F1006E7D4C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 030117D920F412F1006E7D4C /* AppDelegate.m */; };
+		030117DD20F412F1006E7D4C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 030117DC20F412F1006E7D4C /* ViewController.m */; };
+		030117E020F412F1006E7D4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 030117DE20F412F1006E7D4C /* Main.storyboard */; };
+		030117E220F412F2006E7D4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 030117E120F412F2006E7D4C /* Assets.xcassets */; };
+		030117E520F412F2006E7D4C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 030117E320F412F2006E7D4C /* LaunchScreen.storyboard */; };
+		030117E820F412F2006E7D4C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 030117E720F412F2006E7D4C /* main.m */; };
+		030117F220F412F2006E7D4C /* InstantgramTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 030117F120F412F2006E7D4C /* InstantgramTests.m */; };
+		030117FD20F412F3006E7D4C /* InstantgramUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 030117FC20F412F3006E7D4C /* InstantgramUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		030117EE20F412F2006E7D4C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 030117CD20F412F1006E7D4C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 030117D420F412F1006E7D4C;
+			remoteInfo = Instantgram;
+		};
+		030117F920F412F2006E7D4C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 030117CD20F412F1006E7D4C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 030117D420F412F1006E7D4C;
+			remoteInfo = Instantgram;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		030117D520F412F1006E7D4C /* Instantgram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instantgram.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		030117D820F412F1006E7D4C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		030117D920F412F1006E7D4C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		030117DB20F412F1006E7D4C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		030117DC20F412F1006E7D4C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		030117DF20F412F1006E7D4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		030117E120F412F2006E7D4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		030117E420F412F2006E7D4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		030117E620F412F2006E7D4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		030117E720F412F2006E7D4C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		030117ED20F412F2006E7D4C /* InstantgramTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstantgramTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		030117F120F412F2006E7D4C /* InstantgramTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InstantgramTests.m; sourceTree = "<group>"; };
+		030117F320F412F2006E7D4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		030117F820F412F2006E7D4C /* InstantgramUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstantgramUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		030117FC20F412F3006E7D4C /* InstantgramUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InstantgramUITests.m; sourceTree = "<group>"; };
+		030117FE20F412F3006E7D4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		030117D220F412F1006E7D4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		030117EA20F412F2006E7D4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		030117F520F412F2006E7D4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		030117CC20F412F1006E7D4C = {
+			isa = PBXGroup;
+			children = (
+				030117D720F412F1006E7D4C /* Instantgram */,
+				030117F020F412F2006E7D4C /* InstantgramTests */,
+				030117FB20F412F3006E7D4C /* InstantgramUITests */,
+				030117D620F412F1006E7D4C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		030117D620F412F1006E7D4C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				030117D520F412F1006E7D4C /* Instantgram.app */,
+				030117ED20F412F2006E7D4C /* InstantgramTests.xctest */,
+				030117F820F412F2006E7D4C /* InstantgramUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		030117D720F412F1006E7D4C /* Instantgram */ = {
+			isa = PBXGroup;
+			children = (
+				030117D820F412F1006E7D4C /* AppDelegate.h */,
+				030117D920F412F1006E7D4C /* AppDelegate.m */,
+				030117DB20F412F1006E7D4C /* ViewController.h */,
+				030117DC20F412F1006E7D4C /* ViewController.m */,
+				030117DE20F412F1006E7D4C /* Main.storyboard */,
+				030117E120F412F2006E7D4C /* Assets.xcassets */,
+				030117E320F412F2006E7D4C /* LaunchScreen.storyboard */,
+				030117E620F412F2006E7D4C /* Info.plist */,
+				030117E720F412F2006E7D4C /* main.m */,
+			);
+			path = Instantgram;
+			sourceTree = "<group>";
+		};
+		030117F020F412F2006E7D4C /* InstantgramTests */ = {
+			isa = PBXGroup;
+			children = (
+				030117F120F412F2006E7D4C /* InstantgramTests.m */,
+				030117F320F412F2006E7D4C /* Info.plist */,
+			);
+			path = InstantgramTests;
+			sourceTree = "<group>";
+		};
+		030117FB20F412F3006E7D4C /* InstantgramUITests */ = {
+			isa = PBXGroup;
+			children = (
+				030117FC20F412F3006E7D4C /* InstantgramUITests.m */,
+				030117FE20F412F3006E7D4C /* Info.plist */,
+			);
+			path = InstantgramUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		030117D420F412F1006E7D4C /* Instantgram */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0301180120F412F3006E7D4C /* Build configuration list for PBXNativeTarget "Instantgram" */;
+			buildPhases = (
+				030117D120F412F1006E7D4C /* Sources */,
+				030117D220F412F1006E7D4C /* Frameworks */,
+				030117D320F412F1006E7D4C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Instantgram;
+			productName = Instantgram;
+			productReference = 030117D520F412F1006E7D4C /* Instantgram.app */;
+			productType = "com.apple.product-type.application";
+		};
+		030117EC20F412F2006E7D4C /* InstantgramTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0301180420F412F3006E7D4C /* Build configuration list for PBXNativeTarget "InstantgramTests" */;
+			buildPhases = (
+				030117E920F412F2006E7D4C /* Sources */,
+				030117EA20F412F2006E7D4C /* Frameworks */,
+				030117EB20F412F2006E7D4C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				030117EF20F412F2006E7D4C /* PBXTargetDependency */,
+			);
+			name = InstantgramTests;
+			productName = InstantgramTests;
+			productReference = 030117ED20F412F2006E7D4C /* InstantgramTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		030117F720F412F2006E7D4C /* InstantgramUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0301180720F412F3006E7D4C /* Build configuration list for PBXNativeTarget "InstantgramUITests" */;
+			buildPhases = (
+				030117F420F412F2006E7D4C /* Sources */,
+				030117F520F412F2006E7D4C /* Frameworks */,
+				030117F620F412F2006E7D4C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				030117FA20F412F2006E7D4C /* PBXTargetDependency */,
+			);
+			name = InstantgramUITests;
+			productName = InstantgramUITests;
+			productReference = 030117F820F412F2006E7D4C /* InstantgramUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		030117CD20F412F1006E7D4C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = FBU;
+				TargetAttributes = {
+					030117D420F412F1006E7D4C = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					030117EC20F412F2006E7D4C = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 030117D420F412F1006E7D4C;
+					};
+					030117F720F412F2006E7D4C = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 030117D420F412F1006E7D4C;
+					};
+				};
+			};
+			buildConfigurationList = 030117D020F412F1006E7D4C /* Build configuration list for PBXProject "Instantgram" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 030117CC20F412F1006E7D4C;
+			productRefGroup = 030117D620F412F1006E7D4C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				030117D420F412F1006E7D4C /* Instantgram */,
+				030117EC20F412F2006E7D4C /* InstantgramTests */,
+				030117F720F412F2006E7D4C /* InstantgramUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		030117D320F412F1006E7D4C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				030117E520F412F2006E7D4C /* LaunchScreen.storyboard in Resources */,
+				030117E220F412F2006E7D4C /* Assets.xcassets in Resources */,
+				030117E020F412F1006E7D4C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		030117EB20F412F2006E7D4C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		030117F620F412F2006E7D4C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		030117D120F412F1006E7D4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				030117DD20F412F1006E7D4C /* ViewController.m in Sources */,
+				030117E820F412F2006E7D4C /* main.m in Sources */,
+				030117DA20F412F1006E7D4C /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		030117E920F412F2006E7D4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				030117F220F412F2006E7D4C /* InstantgramTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		030117F420F412F2006E7D4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				030117FD20F412F3006E7D4C /* InstantgramUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		030117EF20F412F2006E7D4C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 030117D420F412F1006E7D4C /* Instantgram */;
+			targetProxy = 030117EE20F412F2006E7D4C /* PBXContainerItemProxy */;
+		};
+		030117FA20F412F2006E7D4C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 030117D420F412F1006E7D4C /* Instantgram */;
+			targetProxy = 030117F920F412F2006E7D4C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		030117DE20F412F1006E7D4C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				030117DF20F412F1006E7D4C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		030117E320F412F2006E7D4C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				030117E420F412F2006E7D4C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		030117FF20F412F3006E7D4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0301180020F412F3006E7D4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0301180220F412F3006E7D4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U2589U8592;
+				INFOPLIST_FILE = Instantgram/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ojorasch.Instantgram;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0301180320F412F3006E7D4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U2589U8592;
+				INFOPLIST_FILE = Instantgram/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ojorasch.Instantgram;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0301180520F412F3006E7D4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U2589U8592;
+				INFOPLIST_FILE = InstantgramTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ojorasch.InstantgramTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Instantgram.app/Instantgram";
+			};
+			name = Debug;
+		};
+		0301180620F412F3006E7D4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U2589U8592;
+				INFOPLIST_FILE = InstantgramTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ojorasch.InstantgramTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Instantgram.app/Instantgram";
+			};
+			name = Release;
+		};
+		0301180820F412F3006E7D4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U2589U8592;
+				INFOPLIST_FILE = InstantgramUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ojorasch.InstantgramUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Instantgram;
+			};
+			name = Debug;
+		};
+		0301180920F412F3006E7D4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U2589U8592;
+				INFOPLIST_FILE = InstantgramUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ojorasch.InstantgramUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Instantgram;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		030117D020F412F1006E7D4C /* Build configuration list for PBXProject "Instantgram" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				030117FF20F412F3006E7D4C /* Debug */,
+				0301180020F412F3006E7D4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0301180120F412F3006E7D4C /* Build configuration list for PBXNativeTarget "Instantgram" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0301180220F412F3006E7D4C /* Debug */,
+				0301180320F412F3006E7D4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0301180420F412F3006E7D4C /* Build configuration list for PBXNativeTarget "InstantgramTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0301180520F412F3006E7D4C /* Debug */,
+				0301180620F412F3006E7D4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0301180720F412F3006E7D4C /* Build configuration list for PBXNativeTarget "InstantgramUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0301180820F412F3006E7D4C /* Debug */,
+				0301180920F412F3006E7D4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 030117CD20F412F1006E7D4C /* Project object */;
+}
