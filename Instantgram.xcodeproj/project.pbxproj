@@ -8,13 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		030117DA20F412F1006E7D4C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 030117D920F412F1006E7D4C /* AppDelegate.m */; };
-		030117DD20F412F1006E7D4C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 030117DC20F412F1006E7D4C /* ViewController.m */; };
 		030117E020F412F1006E7D4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 030117DE20F412F1006E7D4C /* Main.storyboard */; };
 		030117E220F412F2006E7D4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 030117E120F412F2006E7D4C /* Assets.xcassets */; };
 		030117E520F412F2006E7D4C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 030117E320F412F2006E7D4C /* LaunchScreen.storyboard */; };
 		030117E820F412F2006E7D4C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 030117E720F412F2006E7D4C /* main.m */; };
 		030117F220F412F2006E7D4C /* InstantgramTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 030117F120F412F2006E7D4C /* InstantgramTests.m */; };
 		030117FD20F412F3006E7D4C /* InstantgramUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 030117FC20F412F3006E7D4C /* InstantgramUITests.m */; };
+		0301180C20F42291006E7D4C /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0301180B20F42291006E7D4C /* LoginViewController.m */; };
+		0301180F20F42A75006E7D4C /* FeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0301180E20F42A75006E7D4C /* FeedViewController.m */; };
+		0301181520F43A95006E7D4C /* PostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0301181420F43A95006E7D4C /* PostViewController.m */; };
+		0301181820F52589006E7D4C /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = 0301181720F52589006E7D4C /* Post.m */; };
+		0301181B20F52647006E7D4C /* PostCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0301181A20F52647006E7D4C /* PostCell.m */; };
+		0301181F20F57417006E7D4C /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0301181E20F57417006E7D4C /* DetailViewController.m */; };
+		4EF9FD7EA66D5B0FDA8C6DC0 /* libPods-InstantgramUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D6CE06EBD5F3DFD76CA89FD2 /* libPods-InstantgramUITests.a */; };
+		852D4A42B1BF971B628DAAAB /* libPods-InstantgramTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CC49863F20820DC4C55EFCD9 /* libPods-InstantgramTests.a */; };
+		D8CF8C87F72BBDA273514847 /* libPods-Instantgram.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8743820A57AE1AAB02D851E6 /* libPods-Instantgram.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +46,6 @@
 		030117D520F412F1006E7D4C /* Instantgram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instantgram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		030117D820F412F1006E7D4C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		030117D920F412F1006E7D4C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		030117DB20F412F1006E7D4C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		030117DC20F412F1006E7D4C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		030117DF20F412F1006E7D4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		030117E120F412F2006E7D4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		030117E420F412F2006E7D4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +57,27 @@
 		030117F820F412F2006E7D4C /* InstantgramUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstantgramUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		030117FC20F412F3006E7D4C /* InstantgramUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InstantgramUITests.m; sourceTree = "<group>"; };
 		030117FE20F412F3006E7D4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0301180A20F42291006E7D4C /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		0301180B20F42291006E7D4C /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		0301180D20F42A75006E7D4C /* FeedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeedViewController.h; sourceTree = "<group>"; };
+		0301180E20F42A75006E7D4C /* FeedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FeedViewController.m; sourceTree = "<group>"; };
+		0301181320F43A95006E7D4C /* PostViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PostViewController.h; sourceTree = "<group>"; };
+		0301181420F43A95006E7D4C /* PostViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PostViewController.m; sourceTree = "<group>"; };
+		0301181620F52589006E7D4C /* Post.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Post.h; sourceTree = "<group>"; };
+		0301181720F52589006E7D4C /* Post.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Post.m; sourceTree = "<group>"; };
+		0301181920F52647006E7D4C /* PostCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PostCell.h; sourceTree = "<group>"; };
+		0301181A20F52647006E7D4C /* PostCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PostCell.m; sourceTree = "<group>"; };
+		0301181D20F57417006E7D4C /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		0301181E20F57417006E7D4C /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		58458170CC444FD7100D3DD1 /* Pods-InstantgramTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstantgramTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InstantgramTests/Pods-InstantgramTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8743820A57AE1AAB02D851E6 /* libPods-Instantgram.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Instantgram.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0E915683B0AA2E212D0111B /* Pods-Instantgram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instantgram.release.xcconfig"; path = "Pods/Target Support Files/Pods-Instantgram/Pods-Instantgram.release.xcconfig"; sourceTree = "<group>"; };
+		CC49863F20820DC4C55EFCD9 /* libPods-InstantgramTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-InstantgramTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5BC65EF4DEA23808EF14519 /* Pods-InstantgramTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstantgramTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-InstantgramTests/Pods-InstantgramTests.release.xcconfig"; sourceTree = "<group>"; };
+		D6CE06EBD5F3DFD76CA89FD2 /* libPods-InstantgramUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-InstantgramUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAF8C435E74BEFF31F1EB7AC /* Pods-Instantgram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instantgram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Instantgram/Pods-Instantgram.debug.xcconfig"; sourceTree = "<group>"; };
+		F03E8D78912801D38D90DD87 /* Pods-InstantgramUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstantgramUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InstantgramUITests/Pods-InstantgramUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F46892D9928FB88BC9DCBA86 /* Pods-InstantgramUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstantgramUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-InstantgramUITests/Pods-InstantgramUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8CF8C87F72BBDA273514847 /* libPods-Instantgram.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				852D4A42B1BF971B628DAAAB /* libPods-InstantgramTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EF9FD7EA66D5B0FDA8C6DC0 /* libPods-InstantgramUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +115,8 @@
 				030117F020F412F2006E7D4C /* InstantgramTests */,
 				030117FB20F412F3006E7D4C /* InstantgramUITests */,
 				030117D620F412F1006E7D4C /* Products */,
+				DA465EF9F4E7B4A05393AD80 /* Pods */,
+				09C2C31632A47A713EF68E42 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,9 +135,12 @@
 			children = (
 				030117D820F412F1006E7D4C /* AppDelegate.h */,
 				030117D920F412F1006E7D4C /* AppDelegate.m */,
-				030117DB20F412F1006E7D4C /* ViewController.h */,
-				030117DC20F412F1006E7D4C /* ViewController.m */,
+				0301181C20F52673006E7D4C /* View Controllers */,
 				030117DE20F412F1006E7D4C /* Main.storyboard */,
+				0301181620F52589006E7D4C /* Post.h */,
+				0301181720F52589006E7D4C /* Post.m */,
+				0301181920F52647006E7D4C /* PostCell.h */,
+				0301181A20F52647006E7D4C /* PostCell.m */,
 				030117E120F412F2006E7D4C /* Assets.xcassets */,
 				030117E320F412F2006E7D4C /* LaunchScreen.storyboard */,
 				030117E620F412F2006E7D4C /* Info.plist */,
@@ -132,6 +167,44 @@
 			path = InstantgramUITests;
 			sourceTree = "<group>";
 		};
+		0301181C20F52673006E7D4C /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0301181320F43A95006E7D4C /* PostViewController.h */,
+				0301181420F43A95006E7D4C /* PostViewController.m */,
+				0301180D20F42A75006E7D4C /* FeedViewController.h */,
+				0301180E20F42A75006E7D4C /* FeedViewController.m */,
+				0301180A20F42291006E7D4C /* LoginViewController.h */,
+				0301180B20F42291006E7D4C /* LoginViewController.m */,
+				0301181D20F57417006E7D4C /* DetailViewController.h */,
+				0301181E20F57417006E7D4C /* DetailViewController.m */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		09C2C31632A47A713EF68E42 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8743820A57AE1AAB02D851E6 /* libPods-Instantgram.a */,
+				CC49863F20820DC4C55EFCD9 /* libPods-InstantgramTests.a */,
+				D6CE06EBD5F3DFD76CA89FD2 /* libPods-InstantgramUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DA465EF9F4E7B4A05393AD80 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DAF8C435E74BEFF31F1EB7AC /* Pods-Instantgram.debug.xcconfig */,
+				C0E915683B0AA2E212D0111B /* Pods-Instantgram.release.xcconfig */,
+				58458170CC444FD7100D3DD1 /* Pods-InstantgramTests.debug.xcconfig */,
+				D5BC65EF4DEA23808EF14519 /* Pods-InstantgramTests.release.xcconfig */,
+				F03E8D78912801D38D90DD87 /* Pods-InstantgramUITests.debug.xcconfig */,
+				F46892D9928FB88BC9DCBA86 /* Pods-InstantgramUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,9 +212,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0301180120F412F3006E7D4C /* Build configuration list for PBXNativeTarget "Instantgram" */;
 			buildPhases = (
+				F9848930B4E58CBB0A5B3781 /* [CP] Check Pods Manifest.lock */,
 				030117D120F412F1006E7D4C /* Sources */,
 				030117D220F412F1006E7D4C /* Frameworks */,
 				030117D320F412F1006E7D4C /* Resources */,
+				03F52C526AD2053266373D77 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -156,6 +231,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0301180420F412F3006E7D4C /* Build configuration list for PBXNativeTarget "InstantgramTests" */;
 			buildPhases = (
+				DC34969FB4741BF8AF49D201 /* [CP] Check Pods Manifest.lock */,
 				030117E920F412F2006E7D4C /* Sources */,
 				030117EA20F412F2006E7D4C /* Frameworks */,
 				030117EB20F412F2006E7D4C /* Resources */,
@@ -174,6 +250,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0301180720F412F3006E7D4C /* Build configuration list for PBXNativeTarget "InstantgramUITests" */;
 			buildPhases = (
+				15536209C3F65368671897F6 /* [CP] Check Pods Manifest.lock */,
 				030117F420F412F2006E7D4C /* Sources */,
 				030117F520F412F2006E7D4C /* Frameworks */,
 				030117F620F412F2006E7D4C /* Resources */,
@@ -257,14 +334,94 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		03F52C526AD2053266373D77 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Instantgram/Pods-Instantgram-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/Parse/Parse.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Parse.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Instantgram/Pods-Instantgram-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		15536209C3F65368671897F6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InstantgramUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC34969FB4741BF8AF49D201 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InstantgramTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9848930B4E58CBB0A5B3781 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Instantgram-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		030117D120F412F1006E7D4C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				030117DD20F412F1006E7D4C /* ViewController.m in Sources */,
+				0301180C20F42291006E7D4C /* LoginViewController.m in Sources */,
+				0301181820F52589006E7D4C /* Post.m in Sources */,
 				030117E820F412F2006E7D4C /* main.m in Sources */,
+				0301181F20F57417006E7D4C /* DetailViewController.m in Sources */,
+				0301180F20F42A75006E7D4C /* FeedViewController.m in Sources */,
+				0301181B20F52647006E7D4C /* PostCell.m in Sources */,
 				030117DA20F412F1006E7D4C /* AppDelegate.m in Sources */,
+				0301181520F43A95006E7D4C /* PostViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,6 +588,7 @@
 		};
 		0301180220F412F3006E7D4C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DAF8C435E74BEFF31F1EB7AC /* Pods-Instantgram.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -448,6 +606,7 @@
 		};
 		0301180320F412F3006E7D4C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0E915683B0AA2E212D0111B /* Pods-Instantgram.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -465,6 +624,7 @@
 		};
 		0301180520F412F3006E7D4C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58458170CC444FD7100D3DD1 /* Pods-InstantgramTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -484,6 +644,7 @@
 		};
 		0301180620F412F3006E7D4C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5BC65EF4DEA23808EF14519 /* Pods-InstantgramTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -503,6 +664,7 @@
 		};
 		0301180820F412F3006E7D4C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F03E8D78912801D38D90DD87 /* Pods-InstantgramUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U2589U8592;
@@ -521,6 +683,7 @@
 		};
 		0301180920F412F3006E7D4C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F46892D9928FB88BC9DCBA86 /* Pods-InstantgramUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U2589U8592;
