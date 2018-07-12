@@ -22,11 +22,13 @@
     [super viewDidLoad];
     self.collectionView.dataSource = self;
     self.collectionView.delegate = self;
-    self.user = User.currentUser;
-    self.usernameLabel.text = User.currentUser.username;
+    self.user = PFUser.currentUser;
+    self.usernameLabel.text = PFUser.currentUser.username;
     if (self.user.profilePic) {
         [self.profileImage setImageWithURL:[NSURL URLWithString:self.user.profilePic.url]];
     }
+    self.profileImage.layer.cornerRadius = 35;
+    self.profileImage.clipsToBounds = YES;
     [self fetchPosts];
     
     UICollectionViewFlowLayout *layout = self.collectionView.collectionViewLayout;

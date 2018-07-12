@@ -8,7 +8,7 @@
 
 #import "LoginViewController.h"
 #import <Parse/Parse.h>
-#import "User.h"
+#import "PFUser+ExtendUser.h"
 
 @interface LoginViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *usernameField;
@@ -22,12 +22,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    /*
-    
-    PFQuery *query = [PFQuery queryWithClassName:@"gameScore"];
-    [query findObjectsInBackgroundWithBlock:^(NSArray * _Nullable objects, NSError * _Nullable error) {
-        NSLog(objects);
-    }];*/
 }
 
 - (void)didReceiveMemoryWarning {
@@ -47,7 +41,7 @@
 
 - (IBAction)registerUser:(id)sender {
     // initialize a user object
-    User *newUser = [User user];
+    PFUser *newUser = [PFUser user];
     
     // set user properties
     newUser.username = self.usernameField.text;

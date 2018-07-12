@@ -8,11 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import <Parse/Parse.h>
-#import "User.h"
+#import "PFUser+ExtendUser.h"
 #import "UIImageView+AFNetworking.h"
 #import "PostCell.h"
 #import "Post.h"
 
 @interface ProfileViewController : UIViewController
-@property (strong, nonatomic) User *user;
+@property (strong, nonatomic) PFUser *user;
 @end
