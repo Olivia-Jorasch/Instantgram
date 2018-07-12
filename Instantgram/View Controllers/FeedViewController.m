@@ -74,6 +74,7 @@
         Post *post = self.posts[indexPath.row];
         DetailViewController *detailViewController = [segue destinationViewController];
         detailViewController.post = post;
+        [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
     }
 }
 

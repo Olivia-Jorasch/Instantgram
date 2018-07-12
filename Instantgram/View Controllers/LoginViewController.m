@@ -8,6 +8,7 @@
 
 #import "LoginViewController.h"
 #import <Parse/Parse.h>
+#import "User.h"
 
 @interface LoginViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *usernameField;
@@ -46,7 +47,7 @@
 
 - (IBAction)registerUser:(id)sender {
     // initialize a user object
-    PFUser *newUser = [PFUser user];
+    User *newUser = [User user];
     
     // set user properties
     newUser.username = self.usernameField.text;
@@ -60,8 +61,6 @@
         } else {
             NSLog(@"User registered successfully");
             [self performSegueWithIdentifier:@"LoginSegue" sender:nil];
-            
-            // manually segue to logged in view
         }
     }];
 }
