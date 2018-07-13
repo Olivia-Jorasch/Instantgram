@@ -14,7 +14,8 @@
 @property (weak, nonatomic) IBOutlet UIImageView *pictureView;
 @property (weak, nonatomic) IBOutlet UILabel *captionLabel;
 @property (weak, nonatomic) IBOutlet UILabel *dateLabel;
-
+@property (weak, nonatomic) IBOutlet UIButton *likeButton;
+@property (weak, nonatomic) IBOutlet UILabel *likesLabel;
 @property (strong, nonatomic) Post *post;
 - (void)configureCell:(Post *)post;
 @end

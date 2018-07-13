@@ -19,7 +19,6 @@
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (strong, nonatomic) NSArray *posts;
 @property (nonatomic, strong) UIRefreshControl *refreshControl;
-
 @end
 
 @implementation FeedViewController
@@ -32,6 +31,10 @@
     self.refreshControl = [[UIRefreshControl alloc] init];
     [self.refreshControl addTarget:self action:@selector(fetchPosts) forControlEvents:UIControlEventValueChanged];
     [self.tableView insertSubview:self.refreshControl atIndex:0];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [self fetchPosts];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -52,6 +55,8 @@
     [query orderByDescending:@"createdAt"];
     query.limit = 20;
     [query includeKey:@"author"];
+    [query includeKey:@"likeCount"];
+    [query includeKey:@"likeUsers"];
     // fetch data asynchronously
     [query findObjectsInBackgroundWithBlock:^(NSArray *posts, NSError *error) {
         if (posts != nil) {

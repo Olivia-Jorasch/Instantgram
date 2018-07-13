@@ -15,6 +15,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *usernameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *dateLabel;
 @property (weak, nonatomic) IBOutlet UILabel *captionLabel;
+@property (weak, nonatomic) IBOutlet UILabel *likesLabel;
+@property (weak, nonatomic) IBOutlet UIButton *likeButton;
 @end
 
 @implementation DetailViewController
@@ -25,12 +27,47 @@
     // Do any additional setup after loading the view.
 }
 
+- (IBAction)didTapLike:(id)sender {
+    if (self.likeButton.selected) {
+        for (NSInteger index = 0; index < self.post.likeUsers.count; index++) {
+            NSLog(@"%@",self.post.likeUsers);
+            if ([PFUser.currentUser.username isEqual:self.post.likeUsers[index]]) {
+                [self.post removeObject:PFUser.currentUser.username forKey:@"likeUsers"];
+                NSNumber *decrement = [NSNumber numberWithInt:-1];
+                [self.post incrementKey:@"likeCount" byAmount:decrement];
+                self.likeButton.selected = NO;
+                self.likesLabel.text = [[NSString stringWithFormat:@"%lu", self.post.likeUsers.count] stringByAppendingString:@" likes"];
+                break;
+            }
+        }
+    } else {
+        [self.post addObject:PFUser.currentUser.username forKey:@"likeUsers"];
+        [self.post incrementKey:@"likeCount"];
+        self.likeButton.selected = YES;
+        self.likesLabel.text = [[NSString stringWithFormat:@"%lu", self.post.likeUsers.count] stringByAppendingString:@" likes"];
+    }
+    [self.post saveInBackgroundWithBlock:^(BOOL succeeded, NSError * _Nullable error) {
+        if (succeeded) {
+            NSLog(@"Successfully updated like count");
+        } else {
+            NSLog(@"Error: %@", error.localizedDescription);
+        }
+    }];
+}
+
 - (void)configureDetails {
     self.pictureView.image = nil;
     [self.pictureView setImageWithURL:[NSURL URLWithString:self.post.image.url]];
     self.captionLabel.text = self.post.caption;
     self.usernameLabel.text = self.post.author.username;
     self.dateLabel.text = [self.post.createdAt timeAgoSinceNow];
+    for (NSString *username in self.post.likeUsers) {
+        if ([PFUser.currentUser.username isEqual:username]) {
+            self.likeButton.selected = YES;
+            break;
+        }
+    }
+    self.likesLabel.text = [[NSString stringWithFormat:@"%lu", self.post.likeUsers.count] stringByAppendingString:@" likes"];
 }
 
 - (void)didReceiveMemoryWarning {
