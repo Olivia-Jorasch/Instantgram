@@ -15,6 +15,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *profileImage;
 @property (weak, nonatomic) IBOutlet UILabel *usernameLabel;
 @property (strong, nonatomic) NSArray *posts;
+@property (weak, nonatomic) IBOutlet UILabel *postsLabel;
 @end
 
 @implementation ProfileViewController
@@ -36,8 +37,8 @@
     
     UICollectionViewFlowLayout *layout = self.collectionView.collectionViewLayout;
     
-    layout.minimumInteritemSpacing = 5;
-    layout.minimumLineSpacing = 5;
+    layout.minimumInteritemSpacing = 3;
+    layout.minimumLineSpacing = 3;
     
     CGFloat postsPerLine = 3;
     CGFloat postWidth = (self.collectionView.frame.size.width - layout.minimumInteritemSpacing * (postsPerLine - 1)) / postsPerLine;
@@ -57,6 +58,7 @@
         if (posts != nil) {
             NSLog(@"nice loading!");
             self.posts = posts;
+            self.postsLabel.text = [NSString stringWithFormat:@"%lu", self.posts.count];
             [self.collectionView reloadData];
         } else {
             NSLog(@"Error: %@", error.localizedDescription);
