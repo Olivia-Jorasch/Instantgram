@@ -566,6 +566,7 @@
                                         </constraints>
                                         <connections>
                                             <outlet property="pictureView" destination="KSO-RK-JGO" id="GFu-0g-SgM"/>
+                                            <segue destination="Dse-Ro-y1F" kind="show" id="Gfa-dF-CR6"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -716,5 +717,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="PH4-7L-Rpw"/>
+        <segue reference="Gfa-dF-CR6"/>
     </inferredMetricsTieBreakers>
 </document>

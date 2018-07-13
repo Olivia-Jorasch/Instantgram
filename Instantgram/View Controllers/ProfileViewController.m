@@ -8,6 +8,7 @@
 
 #import "ProfileViewController.h"
 #import "CollectionFeedCell.h"
+#import "DetailViewController.h"
 
 @interface ProfileViewController () <UINavigationControllerDelegate,UIImagePickerControllerDelegate, UICollectionViewDelegate, UICollectionViewDataSource>
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
@@ -48,6 +49,7 @@
     PFQuery *query = [PFQuery queryWithClassName:@"Post"];
     [query orderByDescending:@"createdAt"];
     [query whereKey:@"author" equalTo:self.user];
+    [query includeKey:@"author"];
     query.limit = 20;
     
     // fetch data asynchronously
@@ -111,15 +113,18 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    CollectionFeedCell *cell = sender;
+    //NSIndexPath *indexPath = [self.collectionView indexPathForCell:cell];
+    Post *post = cell.post;
+    DetailViewController *detailViewController = [segue destinationViewController];
+    detailViewController.post = post;
 }
-*/
+
 
 - (nonnull __kindof UICollectionViewCell *)collectionView:(nonnull UICollectionView *)collectionView cellForItemAtIndexPath:(nonnull NSIndexPath *)indexPath {
     CollectionFeedCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"CollectionFeedCell" forIndexPath:indexPath];
