@@ -44,27 +44,6 @@
     layout.itemSize = CGSizeMake(postWidth, postHeight);
 }
 
-/*
-- (void)fetchUser {
-    PFQuery *query = [User query];
-    //[query whereKey:@"author" equalTo:self.user];
-    
-    // fetch data asynchronously
-    [query findObjectsInBackgroundWithBlock:^(NSArray * _Nullable objects, NSError * _Nullable error) {
-        
-        NSLog(@"%@", error);
-//
-//        if (user != nil) {
-//            NSLog(@"nice loading!");
-//            self.user = user;
-//            [self.collectionView reloadData];
-//        } else {
-//            NSLog(@"%@", error.localizedDescription);
-//        }
-        //[self.refreshControl endRefreshing];
-    }];
-}*/
-
 - (void)fetchPosts {
     PFQuery *query = [PFQuery queryWithClassName:@"Post"];
     [query orderByDescending:@"createdAt"];

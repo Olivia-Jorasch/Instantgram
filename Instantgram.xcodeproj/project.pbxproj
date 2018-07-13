@@ -25,6 +25,7 @@
 		03EEBE8320F7D56300E6BBFA /* HeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 03EEBE8220F7D56300E6BBFA /* HeaderCell.m */; };
 		03EEBE8620F7EFEB00E6BBFA /* PFUser+ExtendUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 03EEBE8520F7EFEB00E6BBFA /* PFUser+ExtendUser.m */; };
 		03EEBE8920F8204600E6BBFA /* ButtonWithUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 03EEBE8820F8204600E6BBFA /* ButtonWithUser.m */; };
+		03EEBE8B20F82C1F00E6BBFA /* launch_gradient.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03EEBE8A20F82C1F00E6BBFA /* launch_gradient.jpg */; };
 		4EF9FD7EA66D5B0FDA8C6DC0 /* libPods-InstantgramUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D6CE06EBD5F3DFD76CA89FD2 /* libPods-InstantgramUITests.a */; };
 		852D4A42B1BF971B628DAAAB /* libPods-InstantgramTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CC49863F20820DC4C55EFCD9 /* libPods-InstantgramTests.a */; };
 		D8CF8C87F72BBDA273514847 /* libPods-Instantgram.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8743820A57AE1AAB02D851E6 /* libPods-Instantgram.a */; };
@@ -84,6 +85,7 @@
 		03EEBE8520F7EFEB00E6BBFA /* PFUser+ExtendUser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "PFUser+ExtendUser.m"; sourceTree = "<group>"; };
 		03EEBE8720F8204600E6BBFA /* ButtonWithUser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ButtonWithUser.h; sourceTree = "<group>"; };
 		03EEBE8820F8204600E6BBFA /* ButtonWithUser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ButtonWithUser.m; sourceTree = "<group>"; };
+		03EEBE8A20F82C1F00E6BBFA /* launch_gradient.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = launch_gradient.jpg; path = ../../launch_gradient.jpg; sourceTree = "<group>"; };
 		58458170CC444FD7100D3DD1 /* Pods-InstantgramTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstantgramTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InstantgramTests/Pods-InstantgramTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8743820A57AE1AAB02D851E6 /* libPods-Instantgram.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Instantgram.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0E915683B0AA2E212D0111B /* Pods-Instantgram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instantgram.release.xcconfig"; path = "Pods/Target Support Files/Pods-Instantgram/Pods-Instantgram.release.xcconfig"; sourceTree = "<group>"; };
@@ -148,24 +150,15 @@
 		030117D720F412F1006E7D4C /* Instantgram */ = {
 			isa = PBXGroup;
 			children = (
-				03EEBE8120F7D56300E6BBFA /* HeaderCell.h */,
-				03EEBE8220F7D56300E6BBFA /* HeaderCell.m */,
 				030117D820F412F1006E7D4C /* AppDelegate.h */,
 				030117D920F412F1006E7D4C /* AppDelegate.m */,
-				03EEBE8420F7EFEB00E6BBFA /* PFUser+ExtendUser.h */,
-				03EEBE8520F7EFEB00E6BBFA /* PFUser+ExtendUser.m */,
-				0301181C20F52673006E7D4C /* View Controllers */,
 				030117DE20F412F1006E7D4C /* Main.storyboard */,
-				03EEBE8720F8204600E6BBFA /* ButtonWithUser.h */,
-				03EEBE8820F8204600E6BBFA /* ButtonWithUser.m */,
-				03EEBE7B20F6BC8600E6BBFA /* CollectionFeedCell.h */,
-				03EEBE7C20F6BC8600E6BBFA /* CollectionFeedCell.m */,
-				0301181620F52589006E7D4C /* Post.h */,
-				0301181720F52589006E7D4C /* Post.m */,
-				0301181920F52647006E7D4C /* PostCell.h */,
-				0301181A20F52647006E7D4C /* PostCell.m */,
-				030117E120F412F2006E7D4C /* Assets.xcassets */,
 				030117E320F412F2006E7D4C /* LaunchScreen.storyboard */,
+				0301181C20F52673006E7D4C /* View Controllers */,
+				03EEBE8C20F82CC800E6BBFA /* My Classes */,
+				03EEBE8D20F82CD700E6BBFA /* Cells */,
+				03EEBE8A20F82C1F00E6BBFA /* launch_gradient.jpg */,
+				030117E120F412F2006E7D4C /* Assets.xcassets */,
 				030117E620F412F2006E7D4C /* Info.plist */,
 				030117E720F412F2006E7D4C /* main.m */,
 			);
@@ -205,6 +198,32 @@
 				0301182120F5B02A006E7D4C /* ProfileViewController.m */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		03EEBE8C20F82CC800E6BBFA /* My Classes */ = {
+			isa = PBXGroup;
+			children = (
+				03EEBE8420F7EFEB00E6BBFA /* PFUser+ExtendUser.h */,
+				03EEBE8520F7EFEB00E6BBFA /* PFUser+ExtendUser.m */,
+				03EEBE8720F8204600E6BBFA /* ButtonWithUser.h */,
+				03EEBE8820F8204600E6BBFA /* ButtonWithUser.m */,
+				0301181620F52589006E7D4C /* Post.h */,
+				0301181720F52589006E7D4C /* Post.m */,
+			);
+			path = "My Classes";
+			sourceTree = "<group>";
+		};
+		03EEBE8D20F82CD700E6BBFA /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				03EEBE8120F7D56300E6BBFA /* HeaderCell.h */,
+				03EEBE8220F7D56300E6BBFA /* HeaderCell.m */,
+				0301181920F52647006E7D4C /* PostCell.h */,
+				0301181A20F52647006E7D4C /* PostCell.m */,
+				03EEBE7B20F6BC8600E6BBFA /* CollectionFeedCell.h */,
+				03EEBE7C20F6BC8600E6BBFA /* CollectionFeedCell.m */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		09C2C31632A47A713EF68E42 /* Frameworks */ = {
@@ -339,6 +358,7 @@
 			files = (
 				030117E520F412F2006E7D4C /* LaunchScreen.storyboard in Resources */,
 				030117E220F412F2006E7D4C /* Assets.xcassets in Resources */,
+				03EEBE8B20F82C1F00E6BBFA /* launch_gradient.jpg in Resources */,
 				030117E020F412F1006E7D4C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -367,10 +387,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Instantgram/Pods-Instantgram-resources.sh",
+				"${PODS_ROOT}/DateTools/DateTools/DateTools/DateTools.bundle",
 				"${PODS_CONFIGURATION_BUILD_DIR}/Parse/Parse.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/DateTools.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Parse.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

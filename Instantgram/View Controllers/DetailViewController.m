@@ -8,6 +8,7 @@
 
 #import "DetailViewController.h"
 #import "UIImageView+AFNetworking.h"
+#import <DateTools.h>
 
 @interface DetailViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *pictureView;
@@ -29,13 +30,7 @@
     [self.pictureView setImageWithURL:[NSURL URLWithString:self.post.image.url]];
     self.captionLabel.text = self.post.caption;
     self.usernameLabel.text = self.post.author.username;
-    
-    NSDate *date = self.post.createdAt;
-    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    formatter.dateFormat = @"E MMM d HH:mm:ss Z y";
-    formatter.dateStyle = NSDateFormatterShortStyle;
-    formatter.timeStyle = NSDateFormatterNoStyle;
-    self.dateLabel.text = [formatter stringFromDate:date];
+    self.dateLabel.text = [self.post.createdAt timeAgoSinceNow];
 }
 
 - (void)didReceiveMemoryWarning {

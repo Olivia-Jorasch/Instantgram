@@ -8,10 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import "Post.h"
+#import <DateTools.h>
 
 @interface PostCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UIImageView *pictureView;
 @property (weak, nonatomic) IBOutlet UILabel *captionLabel;
+@property (weak, nonatomic) IBOutlet UILabel *dateLabel;
+
 @property (strong, nonatomic) Post *post;
 - (void)configureCell:(Post *)post;
 @end

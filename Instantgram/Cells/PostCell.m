@@ -27,6 +27,7 @@
     self.pictureView.image = nil;
     [self.pictureView setImageWithURL:[NSURL URLWithString:post.image.url]];
     self.captionLabel.text = post.caption;
+    self.dateLabel.text = [post.createdAt timeAgoSinceNow];
 }
 
 @end

@@ -18,23 +18,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch_gradient" translatesAutoresizingMaskIntoConstraints="NO" id="tsY-cQ-H36">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch_gradient.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="tsY-cQ-H36">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart_unselected" translatesAutoresizingMaskIntoConstraints="NO" id="6F5-PL-QBN">
-                                <rect key="frame" x="120" y="253" width="134" height="128"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="134" id="DYp-Vl-JP2"/>
-                                    <constraint firstAttribute="height" constant="128" id="sig-IL-9ht"/>
-                                </constraints>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instantgram" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qs5-P0-iFb">
-                                <rect key="frame" x="58" y="389" width="259" height="64"/>
+                                <rect key="frame" x="58" y="301" width="259" height="64"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="c9L-bM-OK5"/>
                                     <constraint firstAttribute="width" constant="259" id="r9x-p6-5n1"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="50"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -42,12 +37,10 @@
                         <constraints>
                             <constraint firstItem="tsY-cQ-H36" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="499-iW-p5B"/>
                             <constraint firstItem="tsY-cQ-H36" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="8HK-el-nk1"/>
-                            <constraint firstItem="6F5-PL-QBN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="233" id="SRb-BE-RMd"/>
+                            <constraint firstItem="Qs5-P0-iFb" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="AIG-RS-MRK"/>
                             <constraint firstItem="Qs5-P0-iFb" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="XGT-O2-xrG"/>
                             <constraint firstItem="tsY-cQ-H36" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="eEb-pH-HSZ"/>
                             <constraint firstItem="tsY-cQ-H36" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="pRG-rb-4A2"/>
-                            <constraint firstItem="Qs5-P0-iFb" firstAttribute="top" secondItem="6F5-PL-QBN" secondAttribute="bottom" constant="8" id="trj-82-vPG"/>
-                            <constraint firstItem="6F5-PL-QBN" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="uQ8-gD-VcU"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -58,7 +51,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="heart_unselected" width="300" height="300"/>
-        <image name="launch_gradient" width="312" height="390"/>
+        <image name="launch_gradient.jpg" width="312" height="390"/>
     </resources>
 </document>
