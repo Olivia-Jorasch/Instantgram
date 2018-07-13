@@ -20,11 +20,13 @@ PODS:
     - Parse/Core (= 1.17.1)
   - Parse/Core (1.17.1):
     - Bolts/Tasks (~> 1.9)
+  - SVProgressHUD (2.2.5)
 
 DEPENDENCIES:
   - AFNetworking
   - DateTools
   - Parse
+  - SVProgressHUD
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -32,13 +34,15 @@ SPEC REPOS:
     - Bolts
     - DateTools
     - Parse
+    - SVProgressHUD
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
   DateTools: 933ac9c490f21f92127cf690ccd8c397e0126caf
   Parse: d3edaf8c7c722cb33cb83ba7821d015ae32d362d
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: 7a3d3afb0bb788b8471b2fe1daeaf5d337f79b5f
+PODFILE CHECKSUM: d275cc70487c40a52decc9abb10c10147c4b4f64
 
 COCOAPODS: 1.5.3

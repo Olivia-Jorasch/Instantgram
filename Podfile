@@ -8,7 +8,8 @@ target 'Instantgram' do
   # Pods for Instantgram
   pod 'Parse'
   pod 'AFNetworking'
-  pod 'DateTools'		
+  pod 'DateTools'
+  pod 'SVProgressHUD'		
 
   target 'InstantgramTests' do
     inherit! :search_paths

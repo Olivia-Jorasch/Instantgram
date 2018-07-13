@@ -23,6 +23,9 @@
     [super viewDidLoad];
     
 }
+- (IBAction)onTap:(id)sender {
+    [self.view endEditing:YES];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

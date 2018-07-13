@@ -7,6 +7,7 @@
 //
 
 #import "PostViewController.h"
+#import <SVProgressHUD/SVProgressHUD.h>
 
 @interface PostViewController ()
 @property (weak, nonatomic) IBOutlet UITextView *captionText;
@@ -63,14 +64,20 @@
 }
 
 - (IBAction)didPressPost:(id)sender {
-    [Post postUserImage:self.image withCaption:self.captionText.text withCompletion:^(BOOL succeeded, NSError * _Nullable error) {
-        if (succeeded) {
-            NSLog(@"yay!");
-            [self dismissViewControllerAnimated:YES completion:nil];
-        } else {
-            NSLog(@"Error: %@", error.localizedDescription);
-        }
-    }];
+    [SVProgressHUD show];
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        [Post postUserImage:self.image withCaption:self.captionText.text withCompletion:^(BOOL succeeded, NSError * _Nullable error) {
+            if (succeeded) {
+                NSLog(@"yay!");
+                [self dismissViewControllerAnimated:YES completion:nil];
+            } else {
+                NSLog(@"Error: %@", error.localizedDescription);
+            }
+        }];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [SVProgressHUD dismiss];
+        });
+    });
 }
 
 - (IBAction)didPressCancel:(id)sender {

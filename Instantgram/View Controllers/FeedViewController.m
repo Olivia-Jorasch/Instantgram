@@ -69,10 +69,6 @@
     }];
 }
 
--(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    NSLog(@"fhdislkjfnsldfkn");
-}
-
 
 #pragma mark - Navigation
 
