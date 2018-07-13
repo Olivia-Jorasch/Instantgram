@@ -232,6 +232,13 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VJM-eK-Oqp" customClass="ButtonWithUser">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="69"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <connections>
+                                                        <segue destination="kPZ-Bp-DAw" kind="show" identifier="UserSelectionSegue" id="PH4-7L-Rpw"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
@@ -244,6 +251,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="headerButton" destination="VJM-eK-Oqp" id="UYR-zb-Vkx"/>
                                             <outlet property="headerImage" destination="9nF-f7-jxy" id="znA-8z-5hT"/>
                                             <outlet property="headerLabel" destination="AOc-8u-zIm" id="BH2-O4-5C4"/>
                                         </connections>
@@ -612,4 +620,7 @@
         <image name="profile_tab" width="25" height="25"/>
         <image name="speech_bubble" width="626" height="626"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="PH4-7L-Rpw"/>
+    </inferredMetricsTieBreakers>
 </document>

@@ -22,8 +22,10 @@
     [super viewDidLoad];
     self.collectionView.dataSource = self;
     self.collectionView.delegate = self;
-    self.user = PFUser.currentUser;
-    self.usernameLabel.text = PFUser.currentUser.username;
+    if (!self.user) {
+        self.user = PFUser.currentUser;
+    }
+    self.usernameLabel.text = self.user.username;
     if (self.user.profilePic) {
         [self.profileImage setImageWithURL:[NSURL URLWithString:self.user.profilePic.url]];
     }

@@ -13,6 +13,7 @@
 #import "UIImageView+AFNetworking.h"
 #import "DetailViewController.h"
 #import "HeaderCell.h"
+#import "ProfileViewController.h"
 
 @interface FeedViewController () <UITableViewDelegate, UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -67,6 +68,10 @@
     }];
 }
 
+-(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSLog(@"fhdislkjfnsldfkn");
+}
+
 
 #pragma mark - Navigation
 
@@ -75,10 +80,15 @@
     if ([segue.identifier isEqual:@"DetailSegue"]) {
         PostCell *cell = sender;
         NSIndexPath *indexPath = [self.tableView indexPathForCell:cell];
-        Post *post = self.posts[indexPath.row];
+        Post *post = cell.post;
         DetailViewController *detailViewController = [segue destinationViewController];
         detailViewController.post = post;
         [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
+    } else if ([segue.identifier isEqual:@"UserSelectionSegue"]) {
+        ButtonWithUser *button = sender;
+        PFUser *user = button.user;
+        ProfileViewController *profileViewController = [segue destinationViewController];
+        profileViewController.user = user;
     }
 }
 

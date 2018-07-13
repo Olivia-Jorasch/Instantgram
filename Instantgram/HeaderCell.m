@@ -25,12 +25,16 @@
 }
 
 -(void)configureHeader:(Post *)post {
+    self.post = post;
     self.headerLabel.text = post.author.username;
     if (post.author.profilePic) {
         [self.headerImage setImageWithURL:[NSURL URLWithString:post.author.profilePic.url]];
     }
     self.headerImage.layer.cornerRadius = 26;
     self.headerImage.clipsToBounds = YES;
+    self.headerButton.user = post.author;
 }
+
+
 
 @end
