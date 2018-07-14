@@ -47,7 +47,7 @@ Please list two areas of the assignment you'd like to **discuss further with you
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://github.com/Olivia-Jorasch/Instantgram/commit/68ec20ea567c6af5f310c7583d316648cc99cacd' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://github.com/Olivia-Jorasch/Instantgram/blob/master/InstantVid.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
